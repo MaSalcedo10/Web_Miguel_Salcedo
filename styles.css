@@ -1,17 +1,22 @@
+/* =========================
+   RESET Y BASE
+========================= */
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-image: url('images/fondo.jpg'); /* Cambia el nombre por el de tu imagen */
+    background-image: url('images/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    /* Puedes agregar un color de respaldo si lo deseas */
     background-color: #f8f9fa;
 }
 
+/* =========================
+   HEADER
+========================= */
 header {
     background-color: #0000007d;
     color: white;
@@ -20,11 +25,62 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 0px; /* Ajusta según la altura de tu nav */
+    margin-top: 0;
 }
 
+.header-horizontal {
+    background-color: #0000007d;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 32px;
+    height: auto;
+}
+
+.header-horizontal .foto-perfil {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+.header-horizontal h1 {
+    margin: 0 0 8px 0;
+    text-align: left;
+    font-size: 2em;
+}
+
+.header-horizontal h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* =========================
+   TITULOS
+========================= */
+h1 {
+    font-size: 70px;
+    margin: 0;
+    text-align: center;
+}
+
+main h2 {
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #222;
+}
+
+main p,
+main ul li {
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #222;
+}
+
+/* =========================
+   NAV
+========================= */
 nav {
-    
+    background-color: #0000007d;
     padding: 10px 0;
     text-align: center;
     position: fixed;
@@ -46,7 +102,7 @@ nav ul li {
 }
 
 nav a {
-    color: #fff; /* Color del texto de los enlaces */
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
@@ -54,122 +110,79 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffd700; /* Color al pasar el mouse */
+    color: #ffd700;
 }
 
+/* =========================
+   FOOTER
+========================= */
 footer {
-    background-color: #0000007d; /* Cambia este color de fondo si lo deseas */
+    background-color: #0000007d;
     color: white;
     padding: 1px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.foto-perfil {
+/* =========================
+   FOTO PERFIL
+========================= */
+.foto-circuito {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 16px auto;
+}
+
+.foto-circuito .foto-perfil,
+.foto-perfil,
+.foto-perfil2 {
     width: 160px;
     height: 160px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #ffffffcf; /* Cambia el color si lo deseas */
+    border: 4px solid #ffffffcf;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     display: block;
     margin: 0 auto 16px auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
 }
 
-.marco-sobre-mi {
+.foto-perfil2 {
+    position: static;
+    margin: 0 auto 4px auto;
+    width: 160px;
+    height: 160px;
+}
+
+/* =========================
+   SECCIONES SOBRE MI
+========================= */
+.marco-sobre-mi,
+.marco-sobre-mi2 {
     background: #0000007d;
     color: white;
-    padding: 24px 20px;
-    margin: 40px 0;
+    padding: 40px;
     box-shadow: 0 2px 12px rgba(44,62,80,0.07);
     text-align: justify;
 }
 
-
-main h2 {
-    color: #ffffff; /* Cambia este color por el que prefieras */
-    text-shadow: 1px 1px 4px #222; /* Opcional: agrega sombra para mejor visibilidad */
-}
-
-main p {
-    color: #ffffff; /* Cambia este color por el que prefieras */
-    text-shadow: 1px 1px 4px #222; /* Opcional: agrega sombra para mejor visibilidad */
-}
-
-main ul li {
-    color: #ffffff; /* Cambia este color por el que prefieras */
-    text-shadow: 1px 1px 4px #222; /* Opcional: agrega sombra para mejor visibilidad */
-    
-}
-
-.logo-linkedin {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-}
-.logo-github {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-}
-
-.foto-perfil2{
-    justify-items: right;
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #ffffffcf; /* Cambia el color si lo deseas */
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    display: block;
-    margin: 0 auto 4px auto;
-    
-}
-
-.header-horizontal {
-    background-color: #0000007d;
-    color: white;
-    display: flex;
-    text-align: center;
-    justify-content: flex-start;
-    padding: 20px 40px;
-    height: auto;
-    gap: 32px;
-}
-
-.header-horizontal .foto-perfil {
-    width: 100px;
-    height: 100px;
-    margin: 0;
-}
-
-.header-horizontal h1 {
-    margin: 0 0 8px 0;
-    text-align: left;
-    font-size: 2em;
-}
-
-.header-horizontal h2 {
-    margin: 0;
-    text-align: center;
-    font-size: 1.5em;
-}
-
 .marco-sobre-mi2 {
-    background: #0000007d;
-    color: white;
-    padding: 24px 20px;
-    margin: 0px 0;
-    box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+    margin: 0;
     text-align: center;
     justify-content: center;
 }
 
-.btn-regresar{
+/* =========================
+   BOTÓN REGRESAR
+========================= */
+.btn-regresar {
     background-color: #0000007d;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -188,16 +201,33 @@ main ul li {
     animation: botonAnimado 0.6s;
 }
 
-.foto-circuito {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 16px auto;
+/* =========================
+   ICONOS REDES SOCIALES
+========================= */
+.logo-linkedin,
+.logo-github {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
 }
 
-.foto-circuito .foto-perfil {
-    position: absolute;
-    top: 20px; left: 20px;
-    width: 160px; height: 160px;
-    z-index: 2;
+.marco-sobre-mi2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.marco-sobre-mi2 ul li {
+    display: inline-block;
+}
+
+a[href="mailto:masg1606@hotmail.com"] {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;  
+    font-weight: bold; 
 }
