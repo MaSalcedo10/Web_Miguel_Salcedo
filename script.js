@@ -68,3 +68,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 400);
     }
 });
+
+// Efecto nav: cambia el fondo al hacer scroll
+document.addEventListener("DOMContentLoaded", function() {
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 30) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+});

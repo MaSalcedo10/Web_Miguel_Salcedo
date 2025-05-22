@@ -70,6 +70,12 @@ main h2 {
     text-shadow: 1px 1px 4px #222;
 }
 
+.header-text {
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #222;
+    font-size: 24px;
+}
+
 main p,
 main ul li {
     color: #ffffff;
@@ -80,7 +86,8 @@ main ul li {
    NAV
 ========================= */
 nav {
-    background-color: #0000007d;
+    background: rgba(0, 0, 0, 0.405);
+    backdrop-filter: blur(8px);
     padding: 10px 0;
     text-align: center;
     position: fixed;
@@ -88,6 +95,12 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
+    transition: background 0.4s;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.10);
+}
+
+nav.scrolled {
+    background: rgba(4, 4, 4, 0.832);
 }
 
 nav ul {
@@ -158,12 +171,28 @@ footer {
     height: 160px;
 }
 
+.foto-perfil3 {
+    width: 160px;
+    height: 160px;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffffffcf;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    display: block;
+    margin: 16px auto 16px auto;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
 /* =========================
    SECCIONES SOBRE MI
 ========================= */
 .marco-sobre-mi,
 .marco-sobre-mi2 {
     background: #0000007d;
+    backdrop-filter: blur(8px);
     color: white;
     padding: 40px;
     box-shadow: 0 2px 12px rgba(44,62,80,0.07);
@@ -230,4 +259,23 @@ a[href="mailto:masg1606@hotmail.com"] {
     font-size: 1.2em;
     transition: color 0.3s ease;  
     font-weight: bold; 
+}
+
+.icono {
+    background-color: #0000007d;
+    padding: 10px;
+    border-radius: 50%;
+    width: 8%;
+    height: 8%;
+    margin: 0 5px;
+    display: inline-block;
+    background-size: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+}
+
+.icono:hover {
+    transform: scale(1.18) rotate(-8deg);
+    box-shadow: 0 0 24px #ffd700, 0 2px 16px #00ffe7;
+    background-color: #222831cc;
 }
