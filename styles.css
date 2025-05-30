@@ -279,3 +279,101 @@ a[href="mailto:masg1606@hotmail.com"] {
     box-shadow: 0 0 24px #ffd700, 0 2px 16px #00ffe7;
     background-color: #222831cc;
 }
+
+/* =========================
+   PROYECTOS
+========================= */
+.proyectos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+
+
+.proyecto {
+    background: #0000007d;
+    border-radius: 12px;
+    padding: 24px 20px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+    text-align: center;
+    color: #fff;
+    border-left: 5px solid #ffd700;
+}
+
+.proyecto h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.proyecto a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.proyecto a:hover {
+    color: #00ffe7;
+}
+
+.proyecto-tecnologias {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #ffd700;
+    background: #222831cc;
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+
+.img-proyecto {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 12px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+}
+
+/* =========================
+   HABILIDADES
+========================= */
+.habilidades-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+span {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.habilidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0000007d;
+    border-radius: 12px;
+    padding: 24px 20px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+    width: 140px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.habilidad:hover {
+    transform: scale(1.08) rotate(-4deg);
+    box-shadow: 0 0 24px #ffd700, 0 2px 16px #00ffe7;
+}
+
+.icono-habilidad {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
