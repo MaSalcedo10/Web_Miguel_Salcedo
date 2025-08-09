@@ -261,23 +261,24 @@ a[href="mailto:masg1606@hotmail.com"] {
     font-weight: bold; 
 }
 
+.iconos_desarrollo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px; /* Espacio entre iconos */
+    margin: 32px 0;
+}
+
 .icono {
+    width: 64px;
+    height: 64px;
     background-color: #0000007d;
     padding: 10px;
     border-radius: 50%;
-    width: 8%;
-    height: 8%;
-    margin: 0 5px;
-    display: inline-block;
-    background-size: cover;
-    transition: transform 0.3s, box-shadow 0.3s;
+    object-fit: contain;
     box-shadow: 0 2px 8px rgba(44,62,80,0.10);
-}
-
-.icono:hover {
-    transform: scale(1.18) rotate(-8deg);
-    box-shadow: 0 0 24px #ffd700, 0 2px 16px #00ffe7;
-    background-color: #222831cc;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: block;
 }
 
 /* =========================
